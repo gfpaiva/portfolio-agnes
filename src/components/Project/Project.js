@@ -2,7 +2,7 @@ import React from 'react';
 
 import Slider from 'react-slick';
 
-import Presentation from '../presentation/presentation';
+import Presentation from '../Presentation/Presentation';
 
 import './Project.scss';
 

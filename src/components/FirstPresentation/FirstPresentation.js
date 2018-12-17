@@ -1,5 +1,5 @@
 import React from 'react';
-import Presentation from '../presentation/presentation';
+import Presentation from '../Presentation/Presentation';
 
 const FirstPresentation = ( { email, linkedin, ...rest } ) => (
 	<Presentation
