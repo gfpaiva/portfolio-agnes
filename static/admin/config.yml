@@ -1,0 +1,84 @@
+backend:
+  name: github
+  repo: gfpaiva/portfolio-agnes
+
+media_folder: static/images
+public_folder: /images
+
+display_url: ''
+
+collections:
+  - name: "Home"
+    label: "Home Page"
+    files:
+      - file: "src/pages/home/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
+          - {
+              label: "Header Presentation",
+              name: "headerPresentation",
+              widget: "object",
+              fields:
+                [
+                  { label: "Email", name: "email", widget: "string" },
+                  { label: "Linkedin", name: "linkedin", widget: "string", required: true },
+                  { label: "Text First", name: "text", widget: "string", required: true },
+                  { label: "Text Second", name: "textSupport", widget: "string", required: true }
+                ],
+            }
+          - {
+              label: "Project List",
+              name: "projectList",
+              widget: "list",
+              fields:
+                [
+                  { label: "Project Name", name: "projectName", widget: "string", required: true },
+                  { label: "Project Location", name: "projectLocation", widget: "string" },
+                  {
+                    label: "Project Link 1",
+                    name: "projectFirstLink",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Link Href", name: "linkHref", widget: "string", required: true },
+                        { label: "Link Title", name: "linkTitle", widget: "string", required: true }
+                      ],
+                  },
+                  {
+                    label: "Project Link 2",
+                    name: "projectSecondLink",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Link Href", name: "linkHref", widget: "string", required: true },
+                        { label: "Link Title", name: "linkTitle", widget: "string", required: true }
+                      ],
+                  },
+                  { label: "Project Description", name: "text", widget: "string", required: true },
+                  {
+                    label: "Project Gallery",
+                    name: "projectGallery",
+                    widget: "list",
+                    required: true,
+                    fields:
+                      [
+                        { label: "Image", name: "image", widget: "image", required: true }
+                        { label: "Image Description", name: "imageAlt", widget: "string" },
+                      ],
+                  },
+
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
