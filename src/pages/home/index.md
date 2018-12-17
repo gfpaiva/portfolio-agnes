@@ -7,7 +7,7 @@ headerPresentation:
     I work with digital & graphic design, branding and illustrations. I'm
     currently working at Work & Co, in São Paulo, Brazil. I work with digital &
     graphic design, branding and illustrations. I'm currently working at Work &
-    Co, in São Paulo, Brazil.
+    Co, in São Paulo, Brasil.
   textSupport: >-
     Recent – Youtube, Elo, Submarino Viagens, Icatu Seguros, Vivo, Santander,
     Whirlpool.
