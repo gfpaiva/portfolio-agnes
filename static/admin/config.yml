@@ -64,8 +64,8 @@ collections:
                     required: true,
                     fields:
                       [
-                        { label: "Image", name: "image", widget: "image", required: true }
-                        { label: "Image Description", name: "imageAlt", widget: "string" },
+                        { label: "Image", name: "image", widget: "image", required: true },
+                        { label: "Image Description", name: "imageAlt", widget: "string" }
                       ],
                   },
 
