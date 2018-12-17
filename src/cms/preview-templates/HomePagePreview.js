@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/* import { HomePageTemplate } from '../../pages/index';
+import { HomeTemplate } from '../../pages/index';
 
 const HomePagePreview = ({ entry }) => {
-	const home = entry.getIn(["data"]).toJS();
-	return <HomePageTemplate home={home} />;
+	const home = entry.getIn(['data']).toJS();
+	return <HomeTemplate home={home} />;
 };
 
 HomePagePreview.propTypes = {
 	entry: PropTypes.shape({
 		getIn: PropTypes.func,
 	}),
-}; */
+};
 
 export default HomePagePreview;
