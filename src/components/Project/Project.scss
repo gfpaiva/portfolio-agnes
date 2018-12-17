@@ -1,0 +1,9 @@
+.project {
+	margin-bottom: 60px;
+
+	&:last-child { margin-bottom: 0 }
+
+	&-slider {
+		&__wrapper { margin-right: 20px; }
+	}
+}

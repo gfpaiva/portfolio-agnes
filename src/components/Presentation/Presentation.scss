@@ -1,0 +1,9 @@
+.presentation {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 40px;
+
+	&--first {
+		margin-bottom: 50vh;
+	}
+}

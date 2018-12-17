@@ -1,6 +1,13 @@
 @import './root',
-		'~normalize.css/normalize.css';
+		'./fonts',
+		'./helpers';
 
+/*
+ * Vendors Imports
+ */
+ @import '~slick-carousel/slick/slick.css',
+		'~slick-carousel/slick/slick-theme.css',
+		'~normalize.css/normalize.css';
 
 html,
 body {
@@ -18,13 +25,30 @@ body {
 	color: $secondary-color;
 }
 
-.container {
-	// max-width: $container;
-	width: 80%;
-	margin: 0 auto;
-	padding: 60px 0;
+a {
+	color: $primary-color;
+	text-decoration: none;
+}
 
-	@media screen and (max-width: 767px) {
-		padding: 30px 0;
-	}
+
+.container {
+	max-width: $container;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+
+	// @media screen and (max-width: 767px) {
+	// 	padding: 30px 0;
+	// }
+}
+
+.text-container {
+	max-width: $textContainer;
+}
+
+
+.fluid-img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
