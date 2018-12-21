@@ -1,36 +1,34 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Portfolio Agnes',
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'pages',
         path: `${__dirname}/src/pages`,
-        name: "pages",
       },
     },
-    /* {
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Agnes',
+        name: 'Agnes Pinhanelli',
         short_name: 'Agnes',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        background_color: '#fff',
+        theme_color: '#000',
+        display: 'standalone',
+        orientation: 'portrait',
+        icon: 'src/images/favicon.png',
       },
-    }, */
+    },
+    'gatsby-plugin-offline',
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
@@ -39,15 +37,10 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [],
-      },
-    },
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-purgecss',
     `gatsby-plugin-netlify-cms`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-no-sourcemaps'
   ],
 }

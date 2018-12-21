@@ -35,7 +35,7 @@ const IndexPage = ( { data } ) => {
 			<Helmet>
 				<meta name="title" content={seoTitle} />
 				<meta name="description" content={seoDescription} />
-				<title>{browserTitle}</title>
+				<title>{`Agnes Pinhanelli | ${browserTitle}`}</title>
 			</Helmet>
 			<HomeTemplate home={home} />
 		</Fragment>
