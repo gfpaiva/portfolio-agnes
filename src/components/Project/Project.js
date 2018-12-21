@@ -27,6 +27,7 @@ const Project = ( { project } ) => {
 				centerMode={true}
 				centerPadding={25}
 				slidesToShow={1}
+				infinite={false}
 			>
 				{projectGallery.map(({ image, imageAlt }, idx) => (
 					<div key={idx} className='project-slider__item'>

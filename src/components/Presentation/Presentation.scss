@@ -1,9 +1,21 @@
 .presentation {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	margin-bottom: 40px;
+
+	@media screen and (min-width: 769px) { grid-template-columns: repeat(3, 1fr) }
+
+	@media screen and (max-width: 768px) {
+		.text-container { margin-top: 40px; }
+	}
 
 	&--first {
 		margin-bottom: 50vh;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 70px;
+
+			.text-container { margin-top: 25vh }
+		}
 	}
+
 }

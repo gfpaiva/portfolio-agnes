@@ -5,5 +5,7 @@
 
 	&-slider {
 		&__wrapper { margin-right: 20px; }
+
+		@media screen and (max-width: 768px) { margin: 0 -5% 0 -5% }
 	}
 }
