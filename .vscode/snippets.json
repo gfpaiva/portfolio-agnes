@@ -1,0 +1,8 @@
+{
+	"css": {
+		"snippets": {
+			"mqm": "@media screen and (min-width:${1}) {\n\t|\n}",
+			"mqx": "@media screen and (max-width:${1}) {\n\t|\n}"
+		}
+	}
+}
