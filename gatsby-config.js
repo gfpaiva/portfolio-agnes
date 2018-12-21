@@ -39,7 +39,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     'gatsby-plugin-sass',
-    'gatsby-plugin-purgecss',
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        ignore: ['slick.css', 'slick-theme.css']
+      }
+    },
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-no-sourcemaps'
   ],
