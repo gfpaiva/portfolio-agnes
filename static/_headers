@@ -1,1 +1,2 @@
-Basic-Auth: agnes:2019agnes
+/
+  Basic-Auth: someuser:somepassword anotheruser:anotherpassword
