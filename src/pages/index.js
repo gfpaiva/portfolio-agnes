@@ -11,7 +11,7 @@ export const HomeTemplate = ( { home } ) => {
 	const { projectList } = home;
 
 	return (
-		<div className='main container'>
+		<div className='main'>
 			<FirstPresentation
 				email={email}
 				linkedin={linkedin}

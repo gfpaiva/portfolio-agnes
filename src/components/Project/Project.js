@@ -13,6 +13,7 @@ const Project = ( { project } ) => {
 	return (
 		<div className='project'>
 			<Presentation
+				className="container"
 				firstColumnText={projectName}
 				firstColumnSupportText={projectLocation}
 				firstColumnSupportHTML={`
@@ -23,9 +24,11 @@ const Project = ( { project } ) => {
 			/>
 
 			<Slider
+				arrows={false}
 				className='project-slider'
 				centerMode={true}
-				centerPadding={25}
+				centerPadding="5%"
+				dots={false}
 				slidesToShow={1}
 				infinite={false}
 			>
