@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Guilherme Paiva <gf.paiva@yahoo.com.br>",
   "dependencies": {
-    "gatsby": "^2.12.0",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-netlify": "^2.1.0",
     "gatsby-plugin-netlify-cms": "^4.1.1",
